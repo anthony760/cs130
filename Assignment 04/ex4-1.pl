@@ -33,7 +33,7 @@ sub prompt_for_number {
 
 # Make sure number greater than zero was entered.
     if ( !($num =~ /^\d+$/) || $num == 0 ) {
-      print "\nWARNING: Area will calculate as zero with provided value of: $num\n";
+      print "\nWARNING: You must enter a number greater than 0. You entered: $num\n\n";
       $num = 0;
     }
 
