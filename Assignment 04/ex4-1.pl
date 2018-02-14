@@ -15,8 +15,10 @@ $height = prompt_for_number("Please enter the height of your rectangle: ");
 # Get the length of the rectangle:
 $length = prompt_for_number("Please enter the length of your rectangle: ");
 
-print $height;
-print $length;
+# Print results:
+print "\nHeight: " . $height;
+print "\nLength: " . $length;
+print "\nArea of Rectangle = ". ($height * $length) . "\n";
 
 #### Subroutines ####
 
