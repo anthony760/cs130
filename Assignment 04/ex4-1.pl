@@ -31,8 +31,11 @@ sub prompt_for_number {
     print $prompt;
     chomp($num = <STDIN>);
 
-# Make sure number was entered; if not, reset to zero.
-    if ( !($num =~ /^\d+$/) ) {$num = 0;}
+# Make sure number greater than zero was entered.
+    if ( !($num =~ /^\d+$/) || $num == 0 ) {
+      print "\nWARNING: Area will calculate as zero with provided value of: $num\n";
+      $num = 0;
+    }
 
 # Loop again if height is less than zero.
   }while( $num <= 0);
