@@ -24,9 +24,8 @@ sub prompt_for_number {
   my ($prompt) = @_;
   my $num = 0;
 
-  do {
-
 # Get user input:
+  do {
     print $prompt;
     chomp($num = <STDIN>);
 
