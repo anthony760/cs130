@@ -23,7 +23,7 @@ print "\nArea of Rectangle = ". ($height * $length) . "\n";
 #### Subroutines ####
 
 sub prompt_for_number {
-  my $prompt = $_[0];
+  my ($prompt) = @_;
   my $num = 0;
 
 # Get user input:
